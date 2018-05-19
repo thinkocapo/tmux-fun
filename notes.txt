@@ -1,0 +1,83 @@
+tmux kill-session -t yo
+
+
+
+tmux new-session \; split-window -h \; split-window -v \; attach
+=
+
+tmux new-session -c ~/Projects
+
+
+
+
+tmux new-session \; split-window -v -c ~/Projects
+
+
+
+
+ctrl +b <leftArrow> - change panes
+ctrl +b <rightArrow> - change panes
+
+
+GOAL 10:57a
+1st Script
+-Pane1 docker container running eos log
+-Pane2 eos-instructions
+
+2nd Script
+-Pane1 docker shell
+-Pane2 eos-instructions
+
+
+tmux new-session -command docker.... \; split-window -v -c ~/Projects/eos-operating-system
+tmux new-session \; split-window -v -c ~/Projects/eos-operation-system
+
+
+
+tmux new-session ./docker-ps.sh
+^^exits immediately..
+
+
+
+
+11:21a
+docker start (./docker-ps.sh | grep eos) --atach
+https://gist.github.com/bobmaerten/9329752
+
+GOOD
+id=$(docker ps -a | grep eos)
+id=$(docker ps -a | grep eos | awk '{print $1}')
+
+
+ctrl+b c creates a new window. tmux ls, appears its part of same session
+ctrl+b l golast window
+ctrl+b gonext window
+
+
+ctrl+d collapse tmux, back to iterm. tmux ls still shows sessions. 
+
+withing a session, did ctrl+c for a new "window" [which you could split into tabs]
+
+ctrl+b then [
+opt+up
+opt+down
+scroll through server log
+or cmd&+up in iTerm *****
+
+
+2:51p
+q to exit tmux scroll mode
+
+
+CHANGE SESSIONS (without having to ctrl+b d to exit session)
+ctrl+b ( or )
+
+CLOSE WINDOW
+ctrl_b &
+
+NEXT WINDOW
+ctrl+b n b l next back or last
+
+
+
+truncates the server/npm log once you ctrl+c to stop it. but can always scroll up it if you enter scroll mode via ctrl+b [ then opt+UP or UP
