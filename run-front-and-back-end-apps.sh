@@ -1,4 +1,5 @@
 # NOTES
+# don't forget to chmod +x './run-front-and-back-end-apps.sh'
 # use -d if you want it to run but then detach from everything
 # Send-Keys sends commands from your current terminal to the -t target
 # C-m runs the text in quotes as a command
