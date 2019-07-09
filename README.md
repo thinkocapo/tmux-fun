@@ -15,3 +15,31 @@ tmux new-session -s eos -n container -c ~/Projects/eos-epic-operating-system \; 
 ## Run
 
 aliases...
+
+## Cheatsheet
+Enter command mode
+Ctrl + b :
+
+Get info on open sessions < windows panes <
+tmux info
+
+tmux list-sessions
+
+tmux detach
+
+tmux list-sessions
+
+tmux attach
+
+tmux new-window -n name_of_window
+
+next window
+ctrl+b n
+
+
+tmux kill-session -t sysadmin
+
+oLD
+/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome "https://github.com/thinkocapo"
+
+
