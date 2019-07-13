@@ -17,29 +17,31 @@ tmux new-session -s eos -n container -c ~/Projects/eos-epic-operating-system \; 
 aliases...
 
 ## Cheatsheet
-Enter command mode
-Ctrl + b :
+tmux
+[0] 0:zsh* means session 0 and 0th window called zsh
 
 Get info on open sessions < windows panes <
 tmux info
 
 tmux list-sessions
 
-tmux detach
-
-tmux list-sessions
-
-tmux attach
-
 tmux new-window -n name_of_window
 
 next window
 ctrl+b n
 
+tmux split-window-v
+tmux send-keys -t 0 'echo yo' <--- sends command to previous pane
 
+Enter command mode
+Ctrl + b :
+
+tmux detach
 tmux kill-session -t sysadmin
+tmux attach
 
-oLD
+////////////////////////////////
+OLD
 /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome "https://github.com/thinkocapo"
 
 
