@@ -27,18 +27,20 @@ tmux list-sessions
 
 tmux new-window -n name_of_window
 
-next window
-ctrl+b n
-
 tmux split-window-v
 tmux send-keys -t 0 'echo yo' <--- sends command to previous pane
 
 Enter command mode
-Ctrl + b :
+Ctrl + b
+Ctrl + b + n for next window
+Ctrl + b + ? for change session, or can tmux detach; tmux attach -t session_name, but that's a lot of work. tmux "re-attach"
+
 
 tmux detach
 tmux kill-session -t sysadmin
 tmux attach
+
+
 
 ////////////////////////////////
 OLD
