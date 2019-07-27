@@ -31,12 +31,12 @@ tmux new-window -n name_of_window
 tmux split-window -v
 
 // send command to pane 0
-tmux send-keys -t 0 'echo you first'
+tmux send-keys -t 0 'echo im in first window'
 
 // send command to pane 1
 tmux send-keys -t 1 'echo me second' 
 
-// swtch between pane 0 and pane 1
+// swtch back to pane 0
 ctrl+b left-arrow or right-arrow
 ```
 
@@ -73,4 +73,13 @@ Additional
 ```
 // Get info on open sessions < windows panes <
 tmux info
+
+// CHANGE SESSIONS (without having to ctrl+b d to exit session)
+ctrl+b ( or )
+// CLOSE WINDOW
+ctrl_b &
+// NEXT WINDOW
+ctrl+b n b l next back or last
+// exit tmux command mode
+q
 ```

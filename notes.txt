@@ -34,11 +34,6 @@ tmux new-session \; split-window -v -c ~/Projects/eos-operation-system
 
 
 
-tmux new-session ./docker-ps.sh
-^^exits immediately..
-
-
-
 
 11:21a
 docker start (./docker-ps.sh | grep eos) --atach
@@ -65,18 +60,8 @@ scroll through server log
 or cmd&+up in iTerm *****
 
 
-2:51p
-q to exit tmux scroll mode
 
 
-CHANGE SESSIONS (without having to ctrl+b d to exit session)
-ctrl+b ( or )
-
-CLOSE WINDOW
-ctrl_b &
-
-NEXT WINDOW
-ctrl+b n b l next back or last
 
 
 
