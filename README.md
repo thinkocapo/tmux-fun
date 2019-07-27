@@ -24,30 +24,40 @@ tmux
 // inside tmux session it says:
 `[0] 0:zsh*` which means session 0 and 0th window called zsh
 
-// Get info on open sessions < windows panes <
-tmux info
-
 // list all open tmux
 tmux list-sessions
 
 tmux new-window -n name_of_window
 tmux split-window -v
 
-// next/previous pane
-ctrl+b {
-ctrl+b }
-
 // send command to pane 0
 tmux send-keys -t 0 'echo you first'
+
 // send command to pane 1
 tmux send-keys -t 1 'echo me second' 
+
+// swtch between pane 0 and pane 1
+ctrl+b left-arrow or right-arrow
 ```
-Enter command mode
+
+
+
+
+
+
+Command Mode
 ```
 Ctrl + b
 Ctrl + b + n for next window
-Ctrl + b + [ for change session?
-tmux attach -t session_name
+Ctrl + b + [ does what?
+
+// switch to pane up/down/left/right
+ctrl+b up-arrow
+ctrl+b down-arrow
+
+// swap panes left/right
+ctrl+b {
+ctrl+b }
 ```
 
 Attaching / detaching
@@ -55,7 +65,12 @@ Attaching / detaching
 tmux detach
 tmux kill-session -t sysadmin
 tmux attach
+// or
+tmux attach -t session_name
 ```
 
-Aliases
-
+Additional
+```
+// Get info on open sessions < windows panes <
+tmux info
+```

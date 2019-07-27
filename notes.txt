@@ -81,3 +81,12 @@ ctrl+b n b l next back or last
 
 
 truncates the server/npm log once you ctrl+c to stop it. but can always scroll up it if you enter scroll mode via ctrl+b [ then opt+UP or UP
+
+
+
+
+////////////////////////////////
+OLD
+/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome "https://github.com/thinkocapo"
+
+
