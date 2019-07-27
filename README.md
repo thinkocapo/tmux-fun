@@ -14,36 +14,48 @@ tmux new-session -s eos -n container -c ~/Projects/eos-epic-operating-system \; 
 ```
 ## Run
 
-aliases...
 
 ## Cheatsheet
-tmux
-[0] 0:zsh* means session 0 and 0th window called zsh
 
-Get info on open sessions < windows panes <
+basic commands
+```
+tmux
+
+// inside tmux session it says:
+`[0] 0:zsh*` which means session 0 and 0th window called zsh
+
+// Get info on open sessions < windows panes <
 tmux info
 
+// list all open tmux
 tmux list-sessions
 
 tmux new-window -n name_of_window
+tmux split-window -v
 
-tmux split-window-v
-tmux send-keys -t 0 'echo yo' <--- sends command to previous pane
+// next/previous pane
+ctrl+b {
+ctrl+b }
 
+// send command to pane 0
+tmux send-keys -t 0 'echo you first'
+// send command to pane 1
+tmux send-keys -t 1 'echo me second' 
+```
 Enter command mode
+```
 Ctrl + b
 Ctrl + b + n for next window
-Ctrl + b + ? for change session, or can tmux detach; tmux attach -t session_name, but that's a lot of work. tmux "re-attach"
+Ctrl + b + [ for change session?
+tmux attach -t session_name
+```
 
-
+Attaching / detaching
+```
 tmux detach
 tmux kill-session -t sysadmin
 tmux attach
+```
 
-
-
-////////////////////////////////
-OLD
-/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome "https://github.com/thinkocapo"
-
+Aliases
 
