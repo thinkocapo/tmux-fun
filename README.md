@@ -1,4 +1,74 @@
 # tmux-fun
-A collection of my favorite shell and tmux scripts
+A collection of shell and tmux scripts
 
 ![SessionsView](/img/sessions-view.png)
+
+## Setup
+
+`alias sysadmin='$HOME/tmux-fun/sysadmin.sh`
+
+## Cheatsheet
+
+Basic commands
+```
+// list all open tmux sessions/windows/panes
+tmux list-sessions
+
+tmux new-window -n name_of_window
+tmux split-window -v
+
+// send command to pane 0
+tmux send-keys -t 0 'echo im in first window'
+
+// send command to pane 1
+tmux send-keys -t 1 'echo me second' 
+
+// swtch back to pane 0
+ctrl+b left-arrow or right-arrow
+
+// inside tmux session it says:
+`[0] 0:zsh*` which means session 0 and 0th window called zsh
+```
+
+
+
+Command Mode
+```
+Ctrl + b
+Ctrl + b + n for next window
+
+// switch to pane up/down/left/right
+ctrl+b up-arrow
+ctrl+b down-arrow
+
+// swap panes left/right
+ctrl+b {
+ctrl+b }
+```
+
+Attaching / detaching
+```
+tmux detach
+tmux kill-session -t sysadmin
+tmux attach
+// or
+tmux attach -t session_name
+```
+
+Additional
+```
+// Get info on open sessions < windows panes <
+tmux info
+
+// change session=
+ctrl+b ( or )
+
+// close window
+ctrl_b &
+
+// next, back or last window
+ctrl+b n or b or l
+
+// exit tmux command mode
+q
+```
