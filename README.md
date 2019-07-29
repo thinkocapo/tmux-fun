@@ -3,6 +3,8 @@ A collection of shell and tmux scripts
 
 ![SessionsView](/img/sessions-view.png)
 
+Download tmux here...link
+
 ## Setup
 
 `alias sysadmin='$HOME/tmux-fun/sysadmin.sh`
