@@ -3,11 +3,18 @@ A collection of shell and tmux scripts
 
 ![SessionsView](/img/sessions-view.png)
 
-Download tmux here...link
+https://github.com/tmux/tmux  
+https://hackernoon.com/a-gentle-introduction-to-tmux-8d784c404340  
+https://medium.com/@jeongwhanchoi/install-tmux-on-osx-and-basics-commands-for-beginners-be22520fd95e
 
 ## Setup
 
-`alias sysadmin='$HOME/tmux-fun/sysadmin.sh`
+```
+brew install tmux
+
+# add to .bash_profil .zshrc
+alias sysadmin='$HOME/tmux-fun/sysadmin.sh
+```
 
 ## Cheatsheet
 
