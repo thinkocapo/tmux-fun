@@ -80,4 +80,11 @@ ctrl+b n or b or l
 
 // exit tmux command mode
 q
+
+// change into a directory
+tmux new-session -c ~/Projects
+
+// change into a directory after splitting window
+split-window -v -c ~/Projects/full-stack-fund
 ```
+
