@@ -85,7 +85,11 @@ q
 // change into a directory
 tmux new-session -c ~/Projects
 
-// change into a directory after splitting window
+// change into a directory after doing something
 split-window -v -c ~/Projects/full-stack-fund
+new-window -n backend_app -c ~/Projects/full-stack-fund
+
+// select pane
+select-pane -t 0
 ```
 
