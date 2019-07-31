@@ -22,6 +22,7 @@ Basic commands
 ```
 // list all open tmux sessions/windows/panes
 tmux list-sessions
+ctrl+b+s show sessions (visual)
 
 tmux new-window -n name_of_window
 tmux split-window -v

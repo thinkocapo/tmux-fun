@@ -4,9 +4,6 @@ alias gh='cd $HOME'
 # List by Date
 alias lsd='ls -ltr | awk {'"'"'print $6 " " $7 " | " $9 '"'"'}'
 
-# Save the working directory
-alias wwd='source ~/scripts/write_pwd.sh'
-
 # Re-load the shell with updated .zshrc
 alias resource='source ~/.zshrc'
 
@@ -24,13 +21,19 @@ alias wcap='ps -f -u wcap | more'
 
 # show processes by CPU usage
 alias cpu='top -u'
+
 # show process tree
 alias pstree='pstree | more'
 
 # list aligned
 alias lsl='ls -l'
+
 # list directories
 alias dir='ls -l | grep ^d'
 
+
+
+#### TMUX
 alias sysadmin='$HOME/thinkocapo/tmux-fun/sysadmin.sh'
+
 alias tls='tmux list-sessions'
