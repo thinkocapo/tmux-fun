@@ -6,8 +6,9 @@
 
 # tmux new-session -s demos \; split-window -h\; send-keys -t 0 'top -u' C-m \; send-keys -t 1 'pstree | more' C-m
 
+# TODO - put this into react.sh
 tmux new-session -s demos \; 
-tmux split-window -h\; 
+tmux split-window -v\; 
 
 # React ( Directory1 & Command1)
 tmux send-keys -t 0 'cd ~/thinkocapo/react' C-m \;
