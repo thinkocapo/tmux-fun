@@ -22,6 +22,7 @@ Basic commands
 ```
 // list all open tmux sessions/windows/panes
 tmux list-sessions
+ctrl+b+s show sessions (visual)
 
 tmux new-window -n name_of_window
 tmux split-window -v
@@ -80,4 +81,15 @@ ctrl+b n or b or l
 
 // exit tmux command mode
 q
+
+// change into a directory
+tmux new-session -c ~/Projects
+
+// change into a directory after doing something
+split-window -v -c ~/Projects/full-stack-fund
+new-window -n backend_app -c ~/Projects/full-stack-fund
+
+// select pane
+select-pane -t 0
 ```
+
